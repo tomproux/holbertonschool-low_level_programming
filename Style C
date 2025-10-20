@@ -12,7 +12,7 @@
 
 # Format: https://YOUR_GITHUB_USERNAME:YOUR_PERSONAL_ACCESS_TOKEN@REPO_URL
 # EXAMPLE:
-# git clone https://YOUR_GITHUB_USERNAME:YOUR_PERSONAL_ACCESS_TOKEN@github.com/OWNER/REPOSITORY.git
+# git clone https://github.com/tomproux/holbertonschool-low_level_programming.git
 
 ##########################################
 ##########################################

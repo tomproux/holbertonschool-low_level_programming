@@ -4,15 +4,15 @@
 ##########################################
 # Global configuration of your Github profile on the machine (sandbox, PC...)
 # Replace YOUR_GITHUB_USERNAME and YOUR_GITHUB_EMAIL with your real informations ( keep the "  " )
-# git config --global user.name "tomproux"
-# git config --global user.email "tomproux53@gmail.com"
+git config --global user.name "tomproux"
+git config --global user.email "tomproux53@gmail.com"
 
 # Example of cloning a GITHUB repo with the TOKEN in the URL to avoid having to enter your credentials each time you do a git push
 # Replace YOUR_GITHUB_USERNAME, YOUR_PERSONAL_ACCESS_TOKEN, and REPO_URL with your real information.
 
 # Format: https://YOUR_GITHUB_USERNAME:YOUR_PERSONAL_ACCESS_TOKEN@REPO_URL
 # EXAMPLE:
-# git clone https://github.com/tomproux/holbertonschool-low_level_programming.git
+git clone https://github.com/tomproux/holbertonschool-low_level_programming.git
 
 ##########################################
 ##########################################

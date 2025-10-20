@@ -12,7 +12,7 @@ git config --global user.email "tomproux53@gmail.com"
 
 # Format: https://YOUR_GITHUB_USERNAME:YOUR_PERSONAL_ACCESS_TOKEN@REPO_URL
 # EXAMPLE:
-git clone https://tomproux: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@github.com/tomproux/holbertonschool-low_level_programming.git
+git clone https://tomproux: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@github.com/tomproux/holbertonschool-low_level_programming.git
 
 ##########################################
 ##########################################

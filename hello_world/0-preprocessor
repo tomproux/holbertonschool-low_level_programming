@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE.c
+expot CFILE=0-main.c

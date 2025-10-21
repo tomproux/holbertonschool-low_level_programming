@@ -10,32 +10,30 @@
 int main(void)
 {
         int n;
-	int tab[ (int) sizeof(int)];
-	int i;
+	int a;
 	char * Last_digit_of = "Last digit of";
 	char * is = "is";
 
         srand(time(0));
         n = rand() - RAND_MAX / 2;
 
-	i = 0;
-	tab[i] = n;
+	a = 0;
 
-	for(i; i < (int) sizeof(int); i++)
+	if (n > 5)
 	{
-       		if (n > 5)
-       		{
-               		printf("%s %d %s %d and is greater than 5\n", Last_digit_of, n, is, tab[0]);
-       		}
-       		if (n == 0)
-       		{
-               		printf("%s %d %s %d and is zero\n", Last_digit_of, n, is, tab[0]);
-       		}
-       		if (n < 6 && n!=0)
-       		{
-               		printf("%s %d %s %d and is less than 6\n", Last_digit_of, n, is, tab[0]);
-       		}
-	}
+        	a = scanf("%d", &n);
+		printf("%s %d %s %d and is greater than 5\n", Last_digit_of, n, is, a);
+       	}
+       	if (n == 0)
+       	{
+               	a = scanf("%d", &n);
+		printf("%s %d %s %d and is zero\n", Last_digit_of, n, is, a);
+       	}
+       	if (n < 6 && n!=0)
+       	{
+		a = scanf("%d", &n);
+		printf("%s %d %s %d and is less than 6\n", Last_digit_of, n, is, a);
+       	}
 
         return (0);
 }

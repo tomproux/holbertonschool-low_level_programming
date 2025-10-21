@@ -16,18 +16,18 @@ int main(void)
         srand(time(0));
         n = rand() - RAND_MAX / 2;
 
-        if (n > 5)
-        {
-                printf("%s %d %s %d and is greater than 5\n", Last_digit_of, rand(), is, n);
-        }
-        if (n == 0)
-        {
-                printf("%s %d %s %d and is zero\n", Last_digit_of, rand(), is, n);
-        }
-        if (n < 6 && n!=0)
-        {
-                printf("%s %d %s %d and is less than 6\n", Last_digit_of, rand(), is, n);
-        }
+       	if (n > 5)
+       	{
+               	printf("%s %d %s %d and is greater than 5\n", Last_digit_of, n, is, n);
+       	}
+       	if (n == 0)
+       	{
+               	printf("%s %d %s %d and is zero\n", Last_digit_of, n, is, n);
+       	}
+       	if (n < 6 && n!=0)
+       	{
+               	printf("%s %d %s %d and is less than 6\n", Last_digit_of, n, is, n);
+       	}
 
         return (0);
 }

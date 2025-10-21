@@ -11,8 +11,6 @@ int main(void)
 	int n;
 	int RAND_MAX;
 
-	RAND_MAX = sizeof(int);
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 

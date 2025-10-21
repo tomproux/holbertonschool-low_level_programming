@@ -31,7 +31,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%s %d %s %d and is less than 6 and not 0\n", Last_digit_of, n, is, d);
+	printf("%s %d %s %d and is less than 6 and not 0\n", Last_digit_of, n, is, d);
 		}
 	}
 

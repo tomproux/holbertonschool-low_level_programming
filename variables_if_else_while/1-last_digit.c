@@ -18,17 +18,17 @@ int main(void)
 
 	if (n > 5)
 	{
-		printf("%s %d %s %1d and is greater than 5\n", Last_digit_of, n, is, n);
+		printf("%s %d %s %.1d and is greater than 5\n", Last_digit_of, n, is, n);
        	}
        	if (n < 6)
        	{
 		if (n == 0)
         	{
-                	printf("%s %d %s %1d and is zero\n", Last_digit_of, n, is, n);
+                	printf("%s %d %s %.1d and is zero\n", Last_digit_of, n, is, n);
         	}
 		else
 		{
-			printf("%s %d %s %1d and is less than 6 and not 0\n", Last_digit_of, n, is, n);
+			printf("%s %d %s %.1d and is less than 6 and not 0\n", Last_digit_of, n, is, n);
        		}
 	}
 

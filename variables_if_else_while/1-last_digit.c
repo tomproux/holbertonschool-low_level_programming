@@ -24,7 +24,7 @@ int main(void)
        	{
 		printf("%s %d %s 0 and is zero\n", Last_digit_of, n, is);
        	}
-       	if (n < 6 && n!=0)
+       	if ( (n < 6) && (n != 0) )
        	{
 		printf("%s %d %s -8 and is less than 6 and not 0\n", Last_digit_of, n, is);
        	}

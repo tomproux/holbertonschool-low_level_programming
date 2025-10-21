@@ -19,13 +19,13 @@ int main(void)
 
 	d = n % 10;
 
-	if (n > 5)
+	if (d > 5)
 	{
 		printf("%s %d %s %d and is greater than 5\n", Last_digit_of, n, is, d);
        	}
-       	if (n < 6)
+       	if (d < 6)
        	{
-		if (n == 0)
+		if (d == 0)
         	{
                 	printf("%s %d %s %d and is zero\n", Last_digit_of, n, is, d);
         	}

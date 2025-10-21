@@ -23,16 +23,16 @@ int main(void)
 	{
 		printf("%s %d %s %d and is greater than 5\n", Last_digit_of, n, is, d);
 	}
-	if (d < 6)
+	else if (d < 6)
 	{
-		if (d == 0)
-		{
-			printf("%s %d %s %d and is 0\n", Last_digit_of, n, is, d);
-		}
-		else
-		{
+	if (d == 0)
+	{
+		printf("%s %d %s %d and is 0\n", Last_digit_of, n, is, d);
+	}
+	else
+	{
 	printf("%s %d %s %d and is less than 6 and not 0\n", Last_digit_of, n, is, d);
-		}
+	}
 	}
 
 	return (0);

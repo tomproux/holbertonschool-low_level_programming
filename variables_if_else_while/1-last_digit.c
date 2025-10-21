@@ -10,25 +10,28 @@
 int main(void)
 {
         int n;
+	int d;
 	char * Last_digit_of = "Last digit of";
 	char * is = "is";
 
         srand(time(0));
         n = rand() - RAND_MAX / 2;
 
+	d = n % 10;
+
 	if (n > 5)
 	{
-		printf("%s %d %s %.1d and is greater than 5\n", Last_digit_of, n, is, n);
+		printf("%s %d %s %d and is greater than 5\n", Last_digit_of, n, is, d);
        	}
        	if (n < 6)
        	{
 		if (n == 0)
         	{
-                	printf("%s %d %s %.1d and is zero\n", Last_digit_of, n, is, n);
+                	printf("%s %d %s %d and is zero\n", Last_digit_of, n, is, d);
         	}
 		else
 		{
-			printf("%s %d %s %.1d and is less than 6 and not 0\n", Last_digit_of, n, is, n);
+			printf("%s %d %s %d and is less than 6 and not 0\n", Last_digit_of, n, is, d);
        		}
 	}
 

@@ -18,15 +18,15 @@ int main(void)
 
         if (n > 5)
         {
-                printf("%s %d %s and is greater than 5\n", Last_digit_of, n, is);
+                printf("%s %d %s %d and is greater than 5\n", Last_digit_of, rand(), is, n);
         }
         if (n == 0)
         {
-                printf("%s %d %s and is zero\n", Last_digit_of, n, is);
+                printf("%s %d %s %d and is zero\n", Last_digit_of, rand(), is, n);
         }
         if (n < 6 && n!=0)
         {
-                printf("%s %d %s and is less than 6\n", Last_digit_of, n, is);
+                printf("%s %d %s %d and is less than 6\n", Last_digit_of, rand(), is, n);
         }
 
         return (0);

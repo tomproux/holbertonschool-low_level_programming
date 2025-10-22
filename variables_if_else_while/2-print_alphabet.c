@@ -7,12 +7,11 @@
 */
 int main(void)
 {
-	char tab[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for(i = 0; i < 26; i++)
+	for(i = 97; i < 123; i++)
 	{
-		printf("%c\n", tab[i]);
+		putchar(i);
 	}
 
 	return (0);

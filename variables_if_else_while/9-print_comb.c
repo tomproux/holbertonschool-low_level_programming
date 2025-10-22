@@ -13,11 +13,10 @@ int main(void)
 	{
 		putchar(i);
 
-		for (i; i < 57; i++)
-		{
+		do {
 			putchar(',');
 			putchar(' ');
-		}
+		} while (i < 57);
 	}
 	putchar('\n');
 

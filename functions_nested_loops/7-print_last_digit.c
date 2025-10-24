@@ -8,18 +8,19 @@
 
 int print_last_digit(int i)
 {
+	int j;
+
 	i = i % 10;
+	j = i;
+	i = (i << 1) + j;
 
 	if (i > 0)
 	{
-		i = i + i * 10;
 		return (i);
 	}
 	else if (i < 0)
 	{
-		i = i + i * 10;
 		return (-i);
 	}
-	i = i + i * 10;
 	return (i);
 }

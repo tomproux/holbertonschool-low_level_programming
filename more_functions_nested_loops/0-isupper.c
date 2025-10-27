@@ -2,13 +2,17 @@ int _isupper(int c)
 {
 	for (c = 32; c < 127; c++)
 	{
-		while (c < 65 && c > 90)
+		if (c < 65)
 		{
 			return (0);
 		}
-		while (c > 64 && c < 91)
+		else if (c > 64 && c < 91)
 		{
 			return (1);
+		}
+		else if (c > 90)
+		{
+			return (0);
 		}
 	}
 	return (0);

@@ -6,10 +6,6 @@ int _isupper(int c)
 		{
 			return (1);
 		}
-		while (c < 65 && c > 90)
-		{
-			return (0);
-		}
 	}
-	return (-1);
+	return (0);
 }

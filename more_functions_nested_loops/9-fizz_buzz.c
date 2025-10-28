@@ -12,11 +12,11 @@ int main(void)
 
 	for (n = 1; n < 101; n++)
 	{
-		if (n == n / 3)
+		if (n % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (n == n / 5)
+		else if (n % 5 == 0)
 		{
 			printf("Buzz");
 		}

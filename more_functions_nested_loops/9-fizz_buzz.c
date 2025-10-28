@@ -19,6 +19,10 @@ int main(void)
 		{
 			printf("Buzz");
 		}
+		else if (n % 3 && n % 5 == 0)
+		{
+			printf("FizzBuzz");
+		}
 		else
 		{
 			printf("%d", n);

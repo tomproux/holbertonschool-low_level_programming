@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int len;
 
-	len = printf("%s", s);
+	len = puts(s);
 
 	return (len);
 }

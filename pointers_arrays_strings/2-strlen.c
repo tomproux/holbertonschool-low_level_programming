@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 
 /**
 * _strlen- retourne la longueur d'une chaine de caractere
@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int len;
 
-	len = strlen(s);
+	len = printf("%s", s);
 
 	return (len);
 }

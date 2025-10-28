@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -24,7 +23,7 @@ int main(void)
 		{
 			printf("%d", n);
 		}
-		_putchar(' ');
+		putchar(' ');
 	}
 
 	return (0);

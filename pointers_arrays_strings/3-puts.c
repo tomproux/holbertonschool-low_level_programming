@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <unistd.h>
-#include <string.h>
 
 /**
 * _puts- affiche une chaine de caractere
@@ -13,13 +12,14 @@ void _puts(char *str)
 	size_t sizeMax;
 	int *fd;
 
-	sizeMax = *str + '\n';
+	sizeMax = *str;
 
-	fd = (int *) malloc(sizeMax);
+	fd = (int *) malloc(sizeMax + 1);
 
 	if (fd != NULL)
 	{
 		write(*fd, str, sizeMax);
+		write(*fd, "\n", sizeMax + 1);
 	}
 
 	free(fd);

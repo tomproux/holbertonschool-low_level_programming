@@ -13,7 +13,7 @@ void _puts(char *str)
 	size_t sizeMax;
 	int *fd;
 
-	sizeMax = strlen(str);
+	sizeMax = *str + '\n';
 
 	fd = (int *) malloc(sizeMax);
 

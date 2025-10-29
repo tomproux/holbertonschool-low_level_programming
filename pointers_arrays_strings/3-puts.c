@@ -9,14 +9,19 @@
 */
 void _puts(char *str)
 {
-	size_t sizeMax = sizeof(*str) + 1;
-	int *fd = malloc();
+	int count;
+	int *tab = (int *) malloc(sizeof(int));
 
-	if (fd != NULL)
+	for (count = 0; *str != '\0'; count++)
 	{
-		write(*fd, str, sizeof(str));
-		write(*fd, "\n", sizeof(str) + 1);
+		str++;
 	}
 
-	free (fd);
+	write(*tab, str, sizeof(int));
+
+	if (*str == '\0')
+	{
+		tab[count + 1] = '\n';
+	}
+	free(tab);
 }

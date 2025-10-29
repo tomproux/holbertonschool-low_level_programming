@@ -12,16 +12,20 @@ void _puts(char *str)
 	int count;
 	int *tab = (int *) malloc(sizeof(int));
 
-	for (count = 0; *str != '\0'; count++)
+	if (tab != NULL)
 	{
-		str++;
+		write(*tab, str, sizeof(int));
+
+		for (count = 0; *str != '\0'; count++)
+		{
+			str++;
+		}
+
+		if (*str == '\0')
+		{
+			tab[count + 1] = '\n';
+		}
 	}
 
-	write(*tab, str, sizeof(int));
-
-	if (*str == '\0')
-	{
-		tab[count + 1] = '\n';
-	}
 	free(tab);
 }

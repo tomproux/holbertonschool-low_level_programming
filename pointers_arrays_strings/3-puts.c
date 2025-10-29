@@ -10,14 +10,13 @@
 void _puts(char *str)
 {
 	int count;
-	int *tab = (int *) malloc(sizeof(int));
+	int *tab = (int *) malloc(sizeof(*str));
 
 	if (tab != NULL)
 	{
-		write(*tab, str, sizeof(int));
-
 		for (count = 0; *str != '\0'; count++)
 		{
+			write(*tab, str, sizeof(*str));
 			str++;
 		}
 

@@ -9,18 +9,14 @@
 */
 void _puts(char *str)
 {
-	size_t sizeMax;
-	int *fd;
-
-	sizeMax = *str;
-
-	fd = (int *) malloc(sizeMax + 1);
+	size_t sizeMax = sizeof(*str) + 1;
+	int *fd = malloc();
 
 	if (fd != NULL)
 	{
-		write(*fd, str, sizeMax);
-		write(*fd, "\n", sizeMax + 1);
+		write(*fd, str, sizeof(str));
+		write(*fd, "\n", sizeof(str) + 1);
 	}
 
-	free(fd);
+	free (fd);
 }

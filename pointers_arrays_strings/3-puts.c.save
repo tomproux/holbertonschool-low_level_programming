@@ -1,4 +1,4 @@
-#include "main.h"
+(#include "main.h"
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -19,6 +19,7 @@ void _puts(char *str)
 			write(*tab, str, sizeof(*str));
 			str++;
 		}
+
 		if (*str == '\0')
 		{
 			tab[count + 1] = '\n';

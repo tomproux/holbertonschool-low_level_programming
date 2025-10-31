@@ -8,21 +8,21 @@
 */
 void print_rev(char *s)
 {
-	int count;
-	char *tab = malloc(sizeof(*s));
+	int i, j, len;
 
-	for (count = 0; *s != '\0'; count++)
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		s++;
+		i++;
 	}
-	if (*s == '\0')
+
+	len = i;
+
+	for (j = len - 1; j >= 0; j--)
 	{
-		while (*s != '\0')
-		{
-			s--;
-			tab[count] = *s;
-		}
+		_putchar(s[j]);
 	}
+
 	_putchar('\n');
-	free(tab);
 }

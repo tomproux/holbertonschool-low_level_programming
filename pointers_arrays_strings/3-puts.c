@@ -9,21 +9,10 @@
 */
 void _puts(char *str)
 {
-	int count;
-	int *tab = (int *) malloc(sizeof(*str));
-
-	if (tab != NULL)
+	while (*str != '\0')
 	{
-		for (count = 0; *str != '\0'; count++)
-		{
-			write(*tab, str, sizeof(*str));
-			str++;
-		}
-		if (*str == '\0')
-		{
-			tab[count + 1] = '\n';
-		}
+		_putchar(*str);
+		str++;
 	}
-
-	free(tab);
+	_putchar('\n');
 }

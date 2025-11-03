@@ -11,11 +11,18 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	int a;
 
-	for (i = 0; *s != '\0'; i++)
+	while (1)
 	{
-		s[i] = c;
+		a = *s++;
+		if (a == c)
+		{
+			return (s - 1);
+		}
+		if (a == 0)
+		{
+			return (NULL);
+		}
 	}
-	return (s);
 }

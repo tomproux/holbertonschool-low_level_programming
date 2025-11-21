@@ -1,1 +1,1 @@
-#c
+#pointers_array_strings
